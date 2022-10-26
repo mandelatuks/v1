@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Portfolio</title>
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2RW928FX86"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2RW928FX86');
+  </script>
+</head>
+<body>
+  <header class="top-header d-flex">
+    <a href="#" class="header-title">Welcome</a>
+    <nav class="mobile-nav-trigger d-flex flex-center">
+      <img src="images/Union.png" alt="">
+    </nav>
+    <nav class="desktop-nav-menu">
+      <span class="close-nav-wrapper">
+        <img src="images/close-menu.png" alt="Close Menu" class="close-nav">
+      </span>
+      <a href="#my-recent-works">Portfolio</a>
+      <a href="#about-me-section">About</a>
+      <a href="#contact-me-form">Contact</a>
+    </nav>
+  </header>
+  
+  <section id="about-me" class="d-flex">
+    <h1 class="d-flex">
+     <span class="self-center center-text">Hey there. I’m Mandela.</span>
+     <span class="green-text self-center center-text animate-pulse">I’m a software developer</span>
+    </h1>
+    <p class="about-me-description  center-text">
+      I can help you build a product , feature or website Look through some of my work and
+      experience! If you like
+      what you see and have a project you need coded,
+      don’t hesitate to contact me.
+    </p>
+    <ul class="social-links self-center d-flex flex-center">
+      <li>
+        <a href="https://twitter.com/MandelaTm1"><img class="animate-shadow" src="images/twitter.svg" alt="Twitter"></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/mandela-tumukunde-794755194/"><img class="animate-shadow" src="images/Linkedin-icon.svg" alt="LinkedIn"></a>
+      </li>
+      <li>
+        <a href="https://medium.com/@Mandela.T"><img class="animate-shadow" src="images/medium.svg" alt="Medium"></a>
+      </li>
+      <li>
+        <a href="https://github.com/mandelatuks"><img class="animate-shadow" src="images/github.svg" alt="GitHub"></a>
+      </li>
+      <li>
+        <a href="https://angel.co/u/mandela"><img class="animate-shadow" src="images/angellist.svg" alt="Angellist"></a>
+      </li>
+    </ul>
+    <a href="#my-recent-works" class="continue-to-bottom">
+      <img src="images/Disabled.svg" alt="Continue">
+    </a>
+  </section>
+
+  <section id="my-recent-works" class="d-flex">
+    <h2 class="self-center section-title-heading  center-text">My Recent <br> Works</h2>
+    <hr class="section-dash-splitter">
+    <div class="projects column-section">
+      
+    </div>
+  </section>
+
+  <section id="about-me-section">
+      <h1 class="section-title-heading flex-center self-center  center-text">About me</h1>
+      <p class="about-me-description  center-text">
+        I can help you build a product ,feature or website Look through <br> some of my work and experience!
+        If you like what you see and have a  project you need coded, 
+        don’t hesitate to contact me.
+      </p>
+      <span class="self-center">
+        <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1oAamTZcyLdxU5zCdgJpNTYxuMzS7bskQNiDsLTE8JYc/edit?usp=sharing" class="action-btn">Get My Resume</a>
+      </span>
+  </section>
+
+  <section id="skill-categories" class="column-section">
+    <div class="card d-flex flex-cols skill-category">
+      <span class="skill-icon self-center flex-center">
+        <img src="images/languages-icon.png" alt="languages">
+      </span>
+      <h3 class="skill-title self-center">Languages</h3>
+      <ul class="skill-stack d-flex flex-center">
+        <li>JavaScript</li>
+        <li>Ruby</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SQL</li>
+        <li>POSTGRES</li>
+      </ul>
+    </div>
+    <div class="card d-flex flex-cols skill-category">
+      <span class="skill-icon self-center flex-center">
+        <img src="images/frameworks-icon.png" alt="Frameworks">
+      </span>
+      <h3 class="skill-title self-center">Frameworks</h3>
+      <ul class="skill-stack d-flex flex-center">
+        <li>ReactJs</li>
+        <li>Bootstrap</li>
+        <li>Ruby on rails</li>
+        <li>MaterializeCSS</li>
+        <li>Capybara</li>
+      </ul>
+    </div>
+    <div class="card d-flex flex-cols skill-category">
+      <span class="skill-icon self-center flex-center">
+        <img src="images/skills-icon.png" alt="Skills">
+      </span>
+      <h3 class="skill-title self-center">Skills</h3>
+      <ul class="skill-stack d-flex flex-center">
+        <li>CodeKit</li>
+        <li>Github</li>
+        <li>Codepen</li>
+        <li >Gitlab</li>
+        <li>Terminal</li>
+
+      </ul>
+    </div>
+  </section>
+  
+  <form action="https://formspree.io/f/xrgjlvve" class="d-flex flex-cols" id="contact-me-form" method="POST">
+    <p class="section-title-heading  center-text">
+      I'm always interested in hearing about new projects and working with teams, so if you'd like to chat please get in touch.
+    </p>
+  
+    <span class="message-fields  d-flex flex-cols">
+      <input type="text" name="full_name" placeholder="Full name" maxlength="30" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <textarea name="message"  cols="30" rows="10" placeholder="Enter Text here" maxlength="500" required></textarea>
+      <span class="error-msg">
+        Invalid email. Your email must be in lowercase.
+      </span>
+      <button type="submit" class="action-btn self-center">
+        Get in touch
+      </button>
+    </span>
+  </form>
+  <aside id="popup-wrapper">
+    
+  </aside>
+  <footer class="d-flex flex-cols">
+    <ul class="social-links self-center d-flex flex-center">
+      <li>
+        <a href="https://twitter.com/MandelaTm1"><img src="images/twitter.svg" alt="Twitter"></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/mandela-tumukunde-794755194"><img src="images/Linkedin-icon.svg" alt="LinkedIn"></a>
+      </li>
+      <li>
+        <a href="https://medium.com/@Mandela.T"><img src="images/medium.svg" alt="Medium"></a>
+      </li>
+      <li>
+        <a href="https://github.com/mandelatuks"><img src="images/github.svg" alt="GitHub"></a>
+      </li>
+      <li>
+        <a href="https://angel.co/u/mandela"><img src="images/angellist.svg" alt="Angellist"></a>
+      </li>
+    </ul>
+    <a href="mailto:manderatuks@gmail.com" class="email self-center">manderatuks@gmail.com</a>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
